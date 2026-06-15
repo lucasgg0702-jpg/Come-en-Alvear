@@ -1,0 +1,52 @@
+{
+    "locales":[
+        {
+            "id": 1,
+            "nombre": "El Buddito",
+            "categoria": ["cena"],
+            "foto": "img/locales/buddito.jpg",
+            "telefono": "3772123456",
+            "delivery": true,
+            "horario": "20:00-00:30",
+            "direccion": "villa buddito 1997",
+            "productos": [
+                {
+                    "nombre": "Burrito Clásico",
+                    "ingredientes": ["tortilla", "carne de buddito", "aderezo de buddito", "papas fritas"],
+                    "precio": 1500,
+                    "foto": "img/productos/buddito.jpg"
+                },
+                {
+                    "nombre":"Super Burrito",
+                    "ingredientes": ["tortilla", "doble carne de buddito", "aderezo de buddito especial", "papas fritas"],
+                    "precio": 2700,
+                    "foto":"img/productos/super-buddito.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Los Budditos Hermanos",
+            "categoria": ["almuerzo", "cena", "postre"],
+            "foto":"img/locales/los-budditos-hermanos.jpg",
+            "telefono":"3772654321",
+            "delivery":false,
+            "horario":"08:00-00:00",
+            "direccion":"salvador buddito 7991",
+            "productos":[
+                {
+                    "nombre": "El Buddito",
+                    "ingredientes":["tortilla de maíz", "doble carne de buddito", "aderezo de buddito ranch", "papas pay"],
+                    "precio":2500,
+                    "foto":"img/productos/el-buddito.jpg"
+                },
+                {
+                    "nombre": "Mega Buddito",
+                    "ingredientes":["tortilla de buddito espacial", "triple carne de buddito especial", "aderezo de buddito secreto", "papas buddito pay"],
+                    "precio":4200,
+                    "foto":"img/productos/mega-buddito.jpg"
+                }
+            ]
+        }
+    ]
+}

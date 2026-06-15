@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Come en Alvear</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <!--Nombre del sitio-->
+                <a class="navbar-brand" href="index.html">Come en Alvear</a>
+                <!--Boton hamburguesa-->
+                <button class="navbar-toggler" type="button" 
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#navbarSupportedContent" 
+                 aria-controls="navbarSupportedContent" 
+                 aria-expanded="false" 
+                 aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Links-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!--el active va en la pestana en la que estemos-->
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hospedajes.html">Hospedajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historia.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <!--Boton de busqueda-->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar producto">
+                        <button class="btn btn-warning" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="fondo-principal">
+              <section id="inicio">
+                 <div class="container-fluid">
+                     <div class="row align-items-center text-center">
+                         <div class="col position-relative">
+                             <h1>Come en Alvear</h1>
+                             <p>Bienvenidos a <b>"Come en Alvear"</b> aca vas a poder consultar todo el catálago gastronomico de la localidad de Alvear: Almuerzos, Cenas e incluso pedir ¡POSTRES! (Si es que hay postre disponible)</p>
+                             <a class="btn btn-warning" href="#locales">Ver Locales</a>
+                         </div>
+                     </div>
+                    </div>
+              </section>
+            <section id="locales">
+                <h2>¡Mira todas las opciones que tenemos!</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <!--Tarjeta almuerzo-->
+                        <div class="col-12 col-md-4">
+                            <div class="card bg-dark text-white">
+                                <img src="img/almuerzo.webp" class="card-img-top" alt="Imagen no encontrada :/">
+                                <div class="card-body">
+                                    <h5 class="card-title">Almuerzos</h5>
+                                    <p class="card-text">Todo tipos de opciones para la comida del mediodía.</p>
+                                    <a href="categoria.html?tipo=almuerzo" class="btn btn-primary">Ver Almuerzos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tarjeta cena-->
+                        <div class="col-12 col-md-4">
+                            <div class="card bg-dark text-white">
+                                <img src="img/cena.webp" class="card-img-top" alt="Imagen no encontrada :/">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cenas</h5>
+                                    <p class="card-text">Todo tipos de opciones para terminar el día satisfecho.</p>
+                                    <a href="categoria.html?tipo=cena" class="btn btn-primary">Ver Cenas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Tarjeta postres-->
+                        <div class="col-12 col-md-4">
+                            <div class="card bg-dark text-white">
+                                <img src="img/postres.webp" class="card-img-top" alt="Imagen no encontrada :/">
+                                <div class="card-body">
+                                    <h5 class="card-title">Postres</h5>
+                                    <p class="card-text">Todo tipos de postres para despues de comer (o antes).</p>
+                                    <a href="categoria.html?tipo=postres" class="btn btn-primary">Ver Postres</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contacto">
+                <h3>Contacto</h3>
+                <h5>¿Sos dueño de un local? Completá el formulario para aparecer en el catálogo</h5>
+                <form id="formulario-contacto" action="https://formspree.io/f/mbdwnayz" method="post">
+                    <p><input  type="text" name="nombre" placeholder="Nombre"></p>
+                    <p><input  type="email" name="email" placeholder="Correo Electrónico"></p>
+                    <p><input  type="number" name="numero" placeholder="Número de teléfono"></p>
+                    <p><textarea  name="mensaje" placeholder="Mensaje"></textarea></p>
+                    <p>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                        <button type="reset" class="btn btn-danger">Borrar</button>
+                    </p>
+                </form>
+            </section>
+            <footer class="bg-dark text-white text-center py-3">
+                <p>Derechos de autor &copy; 2026 Come en Alvear. Todos los derechos reservados</p>
+            </footer>
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

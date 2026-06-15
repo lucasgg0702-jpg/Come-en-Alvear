@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Come en Alvear</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <!--Nombre del sitio-->
+                <a class="navbar-brand" href="index.html">Come en Alvear</a>
+                <!--Boton hamburguesa-->
+                <button class="navbar-toggler" type="button" 
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#navbarSupportedContent" 
+                 aria-controls="navbarSupportedContent" 
+                 aria-expanded="false" 
+                 aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Links-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!--el active va en la pestana en la que estemos-->
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hospedajes.html">Hospedajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historia.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <!--Boton de busqueda-->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar producto">
+                        <button class="btn btn-warning" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="fondo-principal">
+            <div class= "contacto">
+                <h2>Contacto Rápido</h2>
+                <form action="https://formspree.io/f/mbdwnayz" method="post" class="contacto-form">
+                    <p class="contacto-form__nombre">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </p>
+                    <p class="contacto-form__email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    <p class="contacto-form__telefono">
+                        <label for="numero">Teléfono</label>
+                        <input type="text" name="numero" id="numero">
+                    </p>
+                    <p class="contacto-form__mensaje">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje"></textarea>
+                    </p>
+                    <p class="contacto-form__acciones">
+                        <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar">
+                    </p>
+                </form>
+            </div>
+            <div class="datos">
+                <h2>Otras vias de comunicación</h2>
+                <p>También puede contactarse con nosotros usando los siguientes medios</p>
+                <ul>
+                    <li>Teléfono: 3756 12-3456</li>
+                    <li>Email: contacto@transporte2026.com.ar</li>
+                    <li>Facebook: Transporte2026</li>
+                    <li>Twitter: @transporte2026</li>
+                    <li>Skype: Transporte2026</li>
+                </ul>
+            </div>
+        </div>
+        <footer class="bg-dark text-white text-center py-3">
+            <p>Derechos de autor &copy; 2026 Come en Alvear. Todos los derechos reservados</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

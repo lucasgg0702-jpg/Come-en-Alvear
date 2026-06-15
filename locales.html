@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Come en Alvear</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <!--Nombre del sitio-->
+                <a class="navbar-brand" href="index.html">Come en Alvear</a>
+                <!--Boton hamburguesa-->
+                <button class="navbar-toggler" type="button" 
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#navbarSupportedContent" 
+                 aria-controls="navbarSupportedContent" 
+                 aria-expanded="false" 
+                 aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Links-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!--el active va en la pestana en la que estemos-->
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hospedajes.html">Hospedajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historia.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <!--Boton de busqueda-->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar producto">
+                        <button class="btn btn-warning" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="fondo-principal">
+            <section id="locales" class="py-5">
+                <div class="container">
+                    <h2 class="mb-4">Locales</h2>
+                    <!--Tarjeta del local-->
+                    <div class="tarjeta-local mb-4">
+                        <div class="tarjeta-local__info">
+                            <h3 class="tarjeta-local__nombre">Mix Pancho Loco</h3>
+                            <p class="tarjeta-local__dirección"><strong>Dirección:</strong> Lavalle 651, Alvear, Corrientes</p>
+                            <p class="tarjeta-local__horario"><strong>Horario:</strong> Miércoles a Lunes 20:00 - 00:00 hs</p>
+                            <p class="tarjeta-local__numero"><strong>Contacto:</strong> 3772-58-9585</p>
+                            <div class="tarjeta-local__etiquetas mb-3">
+                                <span class="badge bg-warning text-dark">Cena</span>
+                                <span class="badge bg-warning text-dark">Bebidas S/Alcohol</span>
+                                <span class="badge bg-warning text-dark">Bebidas C/Alcohol</span>
+                            </div>
+                            <p class="tarjeta-local__delivery"><strong>Delivery:</strong><span class="badge bg-success">Disponible - $1.000</span></p>
+                            <div class="tarjet-local__acciones mt-4">
+                                <a href="https://maps.app.goo.gl/FJVVgCyTvGRTLgdv9" target="_blank" class="btn btn-outline-dark me-2">📍 Cómo llegar</a>
+                                <a href="menús/menu_mix_pancho_loco.html" class="btn btn-primary">Ver menú</a>
+                            </div>
+                        </div>
+                        <div class="tarjeta-local__imagen">
+                            <img src="img/locales/mix_pancho_loco.jpg" alt="Foto del local Mix Pancho Loco">
+                        </div>
+                    </div>
+                    <!--tarjeta del local-->
+                    <div class="tarjeta-local mb-4">
+                        <div class="tarjeta-local__info">
+                            <h3 class="tarjeta-local__nombre">Date el Gusto</h3>
+                            <p class="tarjeta-local__dirección"><strong>Dirección:</strong> Marcelino Acuña 721, Alvear, Corrientes</p>
+                            <p class="tarjeta-local__horario"><strong>Horario:</strong> Martes a Domingo 19:00 - 00:00 hs</p>
+                            <p class="tarjeta-local__numero"><strong>Contacto:</strong> 2974-324666</p>
+                            <div class="tarjeta-local__etiquetas mb-3">
+                                <span class="badge bg-warning text-dark">Cena</span>
+                            </div>
+                            <p class="tarjeta-local__delivery"><strong>Delivery:</strong><span class="badge bg-success">Disponible - $1.000</span></p>
+                            <div class="tarjeta-local__acciones mt-4">
+                                <a href="" target="_blank" class="btn btn-outline-dark me-2">📍 Cómo llegar</a>
+                                <a href="" class="btn btn-primary">Ver menú</a>
+                            </div>
+                        </div>
+                        <div class="tarjeta-local__imagen">
+                            <img src="img/locales/date_el_gusto.jpg" alt="Foto del local Date el Gusto">
+                        </div>
+                    </div>
+                    <!--tarjeta del local-->
+                    <div class="tarjeta-local mb-4">
+                        <div class="tarjeta-local__info">
+                            <h3 class="tarjeta-local__nombre">Pizzeria Leandro</h3>
+                            <p class="tarjeta-local__dirección"><strong>Dirección:</strong> Lavalle 941, Alvear, Corrientes</p>
+                            <p class="tarjeta-local__horario"><strong>Horario:</strong> Lunes a Domingo 19:00 - 01:00 hs</p>
+                            <p class="tarjeta-local__numero"><strong>Contacto:</strong> 3772 53-4593</p>
+                            <div class="tarjeta-local__etiquetas mb-3">
+                                <spam class="badge bg-warning text-dark">Mesas</spam>
+                                <span class="badge bg-warning text-dark">Cena</span>
+                                <span class="badge bg-warning text-dark">Bebidas S/Alcohol</span>
+                                <span class="badge bg-warning text-dark">Bebidas C/Alcohol</span>
+                            </div>
+                            <p class="tarjeta-local__delivery"><strong>Delivery:</strong><span class="badge bg-success">Disponible - $1.000</span></p>
+                            <div class="tarjeta-local__acciones mt-4">
+                                <a href="" target="_blank" class="btn btn-outline-dark me-2">📍 Cómo llegar</a>
+                                <a href="menús/pizzeria_leandro.html" class="btn btn-primary">Ver menú</a>
+                            </div>
+                        </div>
+                        <div class="tarjeta-local__imagen">
+                            <img src="img/locales/pizzeria_leandro.jpg" alt="Foto del local Pizzeria Leandro">
+                        </div>
+                    </div>
+                    <!--tarjeta del local-->
+                    <div class="tarjeta-local mb-4">
+                        <div class="tarjeta-local__info">
+                            <h3 class="tarjeta-local__nombre">La Cabaña</h3>
+                            <p class="tarjeta-local__dirección"><strong>Dirección:</strong> Isaco Abitbol y Lavalle, Alvear, Corrientes</p>
+                            <p class="tarjeta-local__horario"><strong>Horario:</strong> Lunes a Domingo 19:30 - 00:00 hs</p>
+                            <p class="tarjeta-local__numero"><strong>Contacto:</strong> 3772 43-7182</p>
+                            <div class="tarjeta-local__etiquetas mb-3">
+                                <spam class="badge bg-warning text-dark">Mesas</spam>
+                                <span class="badge bg-warning text-dark">Cena</span>
+                                <span class="badge bg-warning text-dark">Bebidas S/Alcohol</span>
+                                <span class="badge bg-warning text-dark">Bedidas C/Alcohol</span>
+                            </div>
+                            <p class="tarjeta-local__delivery"><strong>Delivery:</strong><span class="badge bg-success">Disponible - Gratis</span></p>
+                            <div class="tarjeta-local__acciones">
+                                <a href="" target="_blank" class="btn btn-outline-dark me-2">📍 Cómo llegar</a>
+                                <a href="" class="btn btn-primary">Ver menú</a>
+                            </div>
+                        </div>
+                        <div class="tarjeta-local__imagen">
+                            <img src="img/locales/la_cabana.jpg" alt="Foto del local La Cabaña">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="bg-dark text-white text-center py-3">
+            <p>Derechos de autor &copy; 2026 Come en Alvear. Todos los derechos reservados</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

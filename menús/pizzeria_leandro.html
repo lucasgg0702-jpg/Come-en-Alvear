@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Come en Alvear</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <!--Nombre del sitio-->
+                <a class="navbar-brand" href="index.html">Come en Alvear</a>
+                <!--Boton hamburguesa-->
+                <button class="navbar-toggler" type="button" 
+                 data-bs-toggle="collapse" 
+                 data-bs-target="#navbarSupportedContent" 
+                 aria-controls="navbarSupportedContent" 
+                 aria-expanded="false" 
+                 aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Links-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!--el active va en la pestana en la que estemos-->
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../hospedajes.html">Hospedajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../historia.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <!--Boton de busqueda-->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar producto">
+                        <button class="btn btn-warning" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="fondo-principal">
+            <section id="menus">
+                <div class="container">
+                    <h1 class="mb-1">Menú</h1>
+                    <h2 class="mb-4">Pizzas</h2>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info"> <!--columna izquierda-->
+                            <h3 class="tarjeta-menu__nombre">Mozzarella</h3>
+                            <p class="tarjeta-menu__descripcion">(Salsa, queso muzzarella, orégano y aceitunas).</p>
+                            <p class="tarjeta-menu__precio"><strong>Precio:</strong> $8.500</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div> <!--linea que separa la info de la imagen-->
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/mozzarela" alt="Foto de pizza mozzarella">
+                        </div>
+                    </div>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Jamón y queso</h3>
+                            <p class="tarjeta-menu__descripcion">(Salsa, queso muzzarella, jamón, orégano y aceitunas).</p>
+                            <p class="tarjeta-menu__precio"><strong>Precio:</strong> $9.000</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/jamon-queso" alt="Foto de pizza jamón y queso">
+                        </div>
+                    </div>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Calabresa</h3>
+                            <p class="tarjeta-menu__descripcion">(Salsa, queso muzzarella, calabresa, orégano y aceitunas).</p>
+                            <p class="tarjeta-menu__precio"><strong>Precio:</strong> $10.000</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/calabresa" alt="Foto de pizza calabresa">
+                        </div>
+                    </div>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Cebolla</h3>
+                            <p class="tarjeta-menu__descripcion">(Salsa, queso muzzarella, cebolla, orégano y aceitunas).</p>
+                            <p class="tarjeta-menu__precio"><strong>Precio:</strong> $9.000</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/cebolla" alt="Foto de pizza con cebolla">
+                        </div>
+                    </div>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Atún</h3>
+                            <p class="tarjeta-menu__descripcion">(Salsa, queso muzzarella, atún, orégano y aceitunas).</p>
+                            <p class="tarjeta-menu__precio"><strong>Precio:</strong> $10.500</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/atun" alt="Foto de pizza muzzarella con atún">
+                        </div>
+                    </div>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Sardina</h3>
+                            <p class="tarjeta-menu__descripcion">(Salsa, queso muzzarella, sardina, orégano y aceitunas).</p>
+                            <p class="tarjeta-menu__precio"><strong>Precio:</strong> $10.500</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/sardina" alt="Foto de pizza con sardina">
+                        </div>
+                    </div>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Napolitana</h3>
+                            <p class="tarjeta-menu__descripcion">(Salsa, queso muzzarella, tomate, orégano y aceitunas).</p>
+                            <p class="tarjeta-menu__precio"><strong>Precio:</strong> $9.000</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/napolitana" alt="Foto de pizza napolitana">
+                        </div>
+                    </div>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Ajo</h3>
+                            <p class="tarjeta-menu__descripcion">(Salsa, queso, ajo, orégano y aceitunas).</p>
+                            <p class="tarjeta-menu__precio"><strong>Precio:</strong> $9.000</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/ajo" alt="Foto de pizza con ajo">
+                        </div>
+                    </div>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Completa</h3>
+                            <p class="tarjeta-menu__descripcion">(Salsa, queso, jamón, tomate, huevo, orégano y aceitunas).</p>
+                            <p class="tarjeta-menu__precio"><strong>Precio:</strong> $10.500</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/completa" alt="Foto de pizza completa">
+                        </div>
+                    </div>
+                    <h2 class="mb-4">Hamburguesas</h2>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Común</h3>
+                            <p class="tarjeta-menu__descripcion">(Pan, lechuga, tomate, queso, patty) aderezos.</p>
+                            <p class="tarjeta-menu__precio"><strong>Precio:</strong> $4.000</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/hamburguesa-común" alt="Foto de hamburguesa común">
+                        </div>
+                    </div>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Completa</h3>
+                            <p class="tarjeta-menu__descripcion">(Pan, jamón, lechuga, tomate, queso, huevo, patty) aderezos.</p>
+                            <p class="tarjeta-menu__precio"><strong>Precio:</strong> $4.500</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/hamburguesa-completa" alt="Foto de hamburguesa completa">
+                        </div>
+                    </div>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Doble patty</h3>
+                            <p class="tarjeta-menu__descripcion">(Pan, jamón, lechuga, tomate, queso, huevo, 2 patty) aderezos.</p>
+                            <p class="tarjeta-menu__precio"><strong>Precio:</strong> $7.000</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/hamburguesa-doble-patty" alt="Foto de hamburguesa doble patty">
+                        </div>
+                    </div>
+                    <h2 class="mb-4">Empanadas</h2>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Carne</h3>
+                            <p class="tarjeta-menu__descripcion">(----).</p>
+                            <p class="tarjeta-menu__precio"><strong>Docena:</strong> $12.000</p>
+                            <p class="tarjeta-menu__precio"><strong>1/2 Docena:</strong> $----</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/empanadas-carne" alt="Foto de empanadas de carne">
+                        </div>
+                    </div>
+                    <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
+                        <div class="tarjeta-menu__info">
+                            <h3 class="tarjeta-menu__nombre">Jamón y queso</h3>
+                            <p class="tarjeta-menu__descripcion">(----).</p>
+                            <p class="tarjeta-menu__precio"><strong>Docena:</strong> $13.000</p>
+                            <p class="tarjeta-menu__precio"><strong>1/2 Docena:</strong> $----</p>
+                            <a href="../img/menús/pizzeria leandro/menú-pizzeria-leandro.pdf" download class="btn btn-primary mt-2">Descargar menú completo</a>
+                        </div>
+                        <div class="tarjeta-menu__separador"></div>
+                        <div class="tarjeta-menu__imagen">
+                            <img src="../img/menús/pizzeria leandro/empanadas-jyq" alt="Foto de empanadas de jamón y queso">
+                        </div>
+                    </div>                    
+                </div>
+            </section>
+        </div>
+        <footer class="bg-dark text-white text-center py-3">
+            <p>Derechos de autor &copy; 2026 Come en Alvear. Todos los derechos reservados</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
