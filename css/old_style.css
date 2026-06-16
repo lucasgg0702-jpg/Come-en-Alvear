@@ -1,0 +1,200 @@
+#inicio .row{
+ min-height: 60vh;
+}
+#inicio, #locales, #contacto{
+    padding: 40px 60px;
+}
+#fondo-principal{ /*imagen de fondo*/
+ position: relative;
+ background-size: cover;
+ background-position: center;
+ background-image: url('../img/Iglesia_Alvear.jpg');
+ background-attachment: fixed; /*mantiene la imagen fija*/
+ z-index: 0; /*queda por debajo del contenido*/
+}
+#fondo-principal::before{ /*overlay semitrasparente*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#inicio h1{
+    color: white;
+    font-family: "Playfair Display";
+}
+#inicio p{
+    color: white;
+    text-align: justify;
+    font-family: "Lato";
+    font-size: larger;
+    padding: 25px;
+}
+#menus{
+    padding: 40px 60px;
+    position: relative;
+    z-index: 1;
+}
+#menus h1,
+#menus h2{
+    color: white;
+}
+#locales .card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
+#locales h2{ 
+    z-index: 1; /*define en que capa aparece*/
+    color: white;
+    position: relative;
+}
+#contacto{ 
+    z-index: 1; /*define en que capa aparece*/
+    color: white;
+    position: relative;
+}
+footer p{
+    color: white;
+}
+.tarjeta-local{
+    display: flex; /*pone columna de info e imagen una al lado de la otra*/
+    border: 1px solid #dee2e6; /*borde gris claro alrededor de toda la tarjeta*/
+    border-radius: 8px; /*redondea las esquinas*/
+    overflow: hidden; /*oculta lo que sale del borde*/
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    min-height: 280px; /*altura minima de la tarjeta*/
+    max-height: 320px; /*altura maxima de la tarjeta*/
+    position: relative; /*neceserio para que z-index funcione*/
+    z-index: 1; /*indica la capa en la que se encuentra*/
+}
+.tarjeta-local__info{
+    flex: 1; /*ocupa todo el lado izquierdo*/
+    padding: 1.5rem; /*para que no quede pegado al borde*/
+}
+.tarjeta-local__nombre{
+    color:#7B1D1D;
+    font-size: 1.4rem;
+    font-weight: 700; /*negrita*/
+    margin-bottom: 0.75rem;
+}
+.tarjeta-local__imagen{
+    width: 280px;
+    flex-shrink: 0; /*evita que se reduzca la columna por poco espacio*/
+}
+.tarjeta-local__imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*ocupa todo el espacio sin deformar la imagen*/
+    display: block; /*elimina el espacio extra que los navegadores agregan debajo de las imagenes*/
+}
+.tarjeta-menu{
+    display:flex;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    min-height: 240px;
+    position: relative; /*neceserio para que z-index funcione*/
+    z-index: 1; /*indica la capa en la que se encuentra*/
+}
+.tarjeta-menu__info{
+    flex: 1;
+    padding: 1.5rem;
+}
+strong{
+    color: black;
+}
+.aviso{
+    color: #7B1D1D;
+    z-index: 2;
+}
+.container{
+    position: relative;
+    z-index: 1;
+}
+.tarjeta-menu__nombre{
+    color: #7B1D1D;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.tarjeta-menu__precio{
+    font-size: 1.1rem;
+    color: #c9952a;
+}
+.tarjeta-menu__imagen{
+    width: 240px;
+    flex-shrink: 0;
+}
+.tarjeta-menu__imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.tarjeta-contacto{
+    display: flex;
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+}
+.tarjeta-contacto div{
+    width: 100%;
+}
+.datos p{
+    font-size: 14px;
+}
+.datos ul li{
+    font-size: 13px;
+}
+.formulario p{
+    display: flex;
+}
+.formulario p label{
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+}
+.formulario p:nth-child(4){
+    align-items: start;
+}
+.formulario textarea{
+    resize: none;
+    height: 150px;
+}
+.formulario input[type="submit"],
+.formulario input[type="reset"]{
+    background: #6da9ed;
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    cursor: pointer;
+}
+.formulario input[type="submit"]:hover,
+.formulario input[type="reset"]{
+    background-color:#2e64a1;
+}
+.formulario p:last-child { /*alinea los dos imputs */
+    align-items: center;
+    gap: 6px;
+}
+@media (max-width: 768px){ /*en pantallas chicas las columnas pasan a ser verticales*/
+  .tarjeta-local,
+  .tarjeta-menu{
+    flex-direction: column; /*el flex pasa a ser vertical*/
+  }
+  .tarjeta-local__imagen,
+  .tarjeta-menu__imagen{
+    width: 100%;    /*la imagen ocupa todo el ancho en celualres*/
+    height: 200px;  /*para que no quede gigante en vertical*/
+  }
+  .tarjeta-menu__separador{
+    width: 100%;  /*el separador pasa a ser horizontal*/
+    height: 1px;
+  }
+}

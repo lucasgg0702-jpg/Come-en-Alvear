@@ -26,7 +26,7 @@ strong{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--color-verlay);
+    background-color: var(--color-overlay);
     z-index: 0;
 }
 
@@ -168,11 +168,13 @@ footer p{
     .tarjeta-menu{
         flex-direction: column; /*pasan de filas a columnas*/
         max-height: none; /*para no limitar la altura en celulares*/
+        overflow: visible;
     }
     .tarjeta-local__imagen,
     .tarjeta-menu__imagen{
         width: 100%;
         height: 200px;
+        overflow: hidden;
     }
     .tarjeta-menu__separador{
         width: 100%;
