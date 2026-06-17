@@ -1,13 +1,24 @@
-/*variables globales: colores y fuentes del proyecto*/
+/*estilos globales*/
+/*colores y fuentes del proyecto*/
 :root{
     --color-borgona: #7b1d1d;
     --color-dorado: #c9952a;
     --color-overlay: rgba(0, 0, 0, 0.4)
 }
+.navbar-brand{
+    font-family: "Playfair Display", serif;
+}
+.navbar-brand img{
+    max-height: 40px;
+    width: auto;
+}
 
 /*estilos globales menores*/
 strong{
     color: black;
+}
+body{
+    padding-top: 54px;
 }
 
 /*fondo principal y overlay*/
@@ -101,7 +112,7 @@ strong{
     color: white;
 }
 .aviso{
-    color: var(--color-borgona);
+    color: #7b1d1d;
     position: relative;
     z-index: 2;
 }
@@ -122,7 +133,7 @@ strong{
     padding: 1.5rem;
 }
 .tarjeta-menu__nombre{
-    color: var(--color-borgoña);
+    color: #7b1d1d;
     font-size: 1.2rem;
     font-weight: 700; /*negrita*/
     margin-bottom: 0.5rem;

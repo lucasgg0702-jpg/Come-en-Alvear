@@ -9,17 +9,14 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <nav class="navbar fixed-top bg-dark navbar-dark"> <!--se elimina el navbar-expand-lg para que siempre se vea el boton hamburguesa-->
             <div class="container-fluid">
-                <!--Nombre del sitio-->
-                <a class="navbar-brand" href="index.html">Come en Alvear</a>
+                <!--Nombre y logo del sitio-->
+                <a class="navbar-brand" href="index.html">
+                    <img src="../img/logo_alvear.svg" alt="logo de come en alvear" class="d-inline-block align-middle">
+                    Come en Alvear</a>
                 <!--Boton hamburguesa-->
-                <button class="navbar-toggler" type="button" 
-                 data-bs-toggle="collapse" 
-                 data-bs-target="#navbarSupportedContent" 
-                 aria-controls="navbarSupportedContent" 
-                 aria-expanded="false" 
-                 aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!--Links-->
@@ -32,6 +29,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../locales.html">Locales</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#pizzas">Pizzas</a></li>
+                                <li><a class="dropdown-item" href="#hamburguesas">Hamburguesas</a></li>
+                                <li><a class="dropdown-item" href="#papas-fritas">Papas fritas</a></li>
+                                <li><a class="dropdown-item" href="#sandwich">Sándwich</a></li>
+                                <li><a class="dropdown-item" href="#milanesas">Milanesas</a></li>
+                                <li><a class="dropdown-item" href="#empanadas">Empanadas </a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../hospedajes.html">Hospedajes</a>
                         </li>
@@ -42,20 +50,15 @@
                             <a class="nav-link" href="../contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <!--Boton de busqueda-->
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar producto">
-                        <button class="btn btn-warning" type="submit">Buscar</button>
-                    </form>
                 </div>
             </div>
         </nav>
         <div id="fondo-principal">
             <section id="menus">
                 <div class="container">
-                    <h1 class="mb-1">Menú</h1>
-                    <h2 class="mb-4">Pizzas</h2>
-                    <h2 class="mb-4">Aviso: la mitad, se cobra el valor de las pizzas chicas.</h2>
+                    <h1 class="mb-1" id="menu">Menú</h1>
+                    <h2 class="mb-4" id="pizzas">Pizzas</h2>
+                    <h2 class="aviso">Aviso: la mitad, se cobra el valor de las pizzas chicas.</h2>
                     <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
                         <div class="tarjeta-menu__info"> <!--columna izquierda-->
                             <h3 class="tarjeta-menu__nombre">Muzzarella</h3>
@@ -110,7 +113,7 @@
                     </div>
                     <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
                         <div class="tarjeta-menu__info">
-                            <h3 class="tarjeta-menu__nombre">Jamon</h3>
+                            <h3 class="tarjeta-menu__nombre">Jamón</h3>
                             <p class="tarjeta-menu__descripcion">(Salsa, queso muzzarella, jamón cocido, orégano y aceitunas).</p>
                             <p class="tarjeta-menu__precio"><strong>Chica-Precio:</strong> $7.500</p>
                             <p class="tarjeta-menu__precio"><strong>Grande-Precio:</strong> $12.000</p>
@@ -186,7 +189,7 @@
                             <img src="../img/menús/mix pancho loco/napolitana" alt="Foto de pizza napolitana">
                         </div>
                     </div>
-                    <h2 class="mb-4">Hamburguesas</h2>
+                    <h2 class="mb-4" id="hamburguesas">Hamburguesas</h2>
                     <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
                         <div class="tarjeta-menu__info">
                             <h3 class="tarjeta-menu__nombre">Clasica</h3>
@@ -235,7 +238,7 @@
                             <img src="../img/menús/mix pancho loco/hamburguesa-super" alt="Foto de hamburguesa super">
                         </div>
                     </div>
-                    <h2 class="mb-4">Papas fritas</h2>
+                    <h2 class="mb-4" id="papas-fritas">Papas fritas</h2>
                     <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
                         <div class="tarjeta-menu__info">
                             <h3 class="tarjeta-menu__nombre">McCain</h3>
@@ -260,7 +263,7 @@
                             <img src="../img/menús/mix pancho loco/papas-caseras" alt="Foto de papas-caseras">
                         </div>
                     </div>
-                    <h2 class="mb-4">Sándwich</h2>
+                    <h2 class="mb-4" id="sandwich">Sándwich</h2>
                     <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
                         <div class="tarjeta-menu__info">
                             <h3 class="tarjeta-menu__nombre">Tortuguita</h3>
@@ -273,7 +276,7 @@
                             <img src="../img/menús/mix pancho loco/tortuguita" alt="Foto de sandwich tortuguita">
                         </div>
                     </div>
-                    <h2 class="mb-4">Milanesas</h2>
+                    <h2 class="mb-4" id="milanesas">Milanesas</h2>
                     <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
                         <div class="tarjeta-menu__info">
                             <h3 class="tarjeta-menu__nombre">Milanesa a Caballo</h3>
@@ -298,7 +301,7 @@
                             <img src="../img/menús/mix pancho loco/milanesa-napolitana" alt="Foto de milanesa napolitana">
                         </div>
                     </div>
-                    <h2 class="mb-4">Empanadas al Horno</h2>
+                    <h2 class="mb-4" id="empanadas">Empanadas al Horno</h2>
                     <div class="tarjeta-menu mb-4"> <!--tarjeta del plato-->
                         <div class="tarjeta-menu__info">
                             <h3 class="tarjeta-menu__nombre">Jamón y queso</h3>
