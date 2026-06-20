@@ -9,17 +9,14 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <nav class="navbar fixed-top bg-dark navbar-dark"> <!--se elimina el navbar-expand-lg para que siempre se vea el boton hamburguesa-->
             <div class="container-fluid">
-                <!--Nombre del sitio-->
-                <a class="navbar-brand" href="index.html">Come en Alvear</a>
+                <!--Nombre y logo del sitio-->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_alvear.svg" alt="logo de come en alvear" class="d-inline-block align-middle">
+                    Come en Alvear</a>
                 <!--Boton hamburguesa-->
-                <button class="navbar-toggler" type="button" 
-                 data-bs-toggle="collapse" 
-                 data-bs-target="#navbarSupportedContent" 
-                 aria-controls="navbarSupportedContent" 
-                 aria-expanded="false" 
-                 aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!--Links-->
@@ -30,7 +27,7 @@
                             <a class="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="locales.html">Locales</a>
+                            <a class="nav-link" href="locales.html">Locales</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="hospedajes.html">Hospedajes</a>
@@ -42,11 +39,6 @@
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <!--Boton de busqueda-->
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar producto">
-                        <button class="btn btn-warning" type="submit">Buscar</button>
-                    </form>
                 </div>
             </div>
         </nav>
@@ -88,8 +80,8 @@
                             </div>
                             <p class="tarjeta-local__delivery"><strong>Delivery:</strong><span class="badge bg-success">Disponible - $1.000</span></p>
                             <div class="tarjeta-local__acciones mt-4">
-                                <a href="" target="_blank" class="btn btn-outline-dark me-2">📍 Cómo llegar</a>
-                                <a href="menús/menu_date_el_gusto.html" class="btn btn-primary">Ver menú</a>
+                                <a href="https://maps.app.goo.gl/7oKzZkeuZBNBByg49" target="_blank" class="btn btn-outline-dark me-2">📍 Cómo llegar</a>
+                                <a href="menús/date_el_gusto.html" class="btn btn-primary">Ver menú</a>
                             </div>
                         </div>
                         <div class="tarjeta-local__imagen">
@@ -111,7 +103,7 @@
                             </div>
                             <p class="tarjeta-local__delivery"><strong>Delivery:</strong><span class="badge bg-success">Disponible - $1.000</span></p>
                             <div class="tarjeta-local__acciones mt-4">
-                                <a href="" target="_blank" class="btn btn-outline-dark me-2">📍 Cómo llegar</a>
+                                <a href="https://maps.app.goo.gl/pxYMYpuBB1CeDsBg8" target="_blank" class="btn btn-outline-dark me-2">📍 Cómo llegar</a>
                                 <a href="menús/pizzeria_leandro.html" class="btn btn-primary">Ver menú</a>
                             </div>
                         </div>
@@ -134,12 +126,12 @@
                             </div>
                             <p class="tarjeta-local__delivery"><strong>Delivery:</strong><span class="badge bg-success">Disponible - Gratis</span></p>
                             <div class="tarjeta-local__acciones">
-                                <a href="" target="_blank" class="btn btn-outline-dark me-2">📍 Cómo llegar</a>
-                                <a href="" class="btn btn-primary">Ver menú</a>
+                                <a href="https://maps.app.goo.gl/mjjGpQGEMWkD51tDA" target="_blank" class="btn btn-outline-dark me-2">📍 Cómo llegar</a>
+                                <a href="menús/la_cabana.html" class="btn btn-primary">Ver menú</a>
                             </div>
                         </div>
                         <div class="tarjeta-local__imagen">
-                            <img src="img/locales/la_cabana.jpg" alt="Foto del local La Cabaña">
+                            <img src="img/locales/la_cabaña.jpg" alt="Foto del local La Cabaña">
                         </div>
                     </div>
                 </div>

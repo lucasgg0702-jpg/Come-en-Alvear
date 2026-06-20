@@ -9,17 +9,14 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <nav class="navbar fixed-top bg-dark navbar-dark"> <!--se elimina el navbar-expand-lg para que siempre se vea el boton hamburguesa-->
             <div class="container-fluid">
-                <!--Nombre del sitio-->
-                <a class="navbar-brand" href="index.html">Come en Alvear</a>
+                <!--Nombre y logo del sitio-->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_alvear.svg" alt="logo de come en alvear" class="d-inline-block align-middle">
+                    Come en Alvear</a>
                 <!--Boton hamburguesa-->
-                <button class="navbar-toggler" type="button" 
-                 data-bs-toggle="collapse" 
-                 data-bs-target="#navbarSupportedContent" 
-                 aria-controls="navbarSupportedContent" 
-                 aria-expanded="false" 
-                 aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!--Links-->
@@ -27,7 +24,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <!--el active va en la pestana en la que estemos-->
-                            <a class="nav-link active" href="index.html">Inicio</a>
+                            <a class="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="locales.html">Locales</a>
@@ -42,22 +39,17 @@
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <!--Boton de busqueda-->
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar producto">
-                        <button class="btn btn-warning" type="submit">Buscar</button>
-                    </form>
                 </div>
             </div>
         </nav>
         <div id="fondo-principal">
-              <section id="inicio">
+            <section id="inicio">
                  <div class="container-fluid">
                      <div class="row align-items-center text-center">
                          <div class="col position-relative">
                              <h1>Come en Alvear</h1>
                              <p>Bienvenidos a <b>"Come en Alvear"</b> aca vas a poder consultar todo el catálago gastronomico de la localidad de Alvear: Almuerzos, Cenas e incluso pedir ¡POSTRES! (Si es que hay postre disponible)</p>
-                             <a class="btn btn-warning" href="#locales">Ver Locales</a>
+                             <a class="btn btn-warning" href="locales.html">Ver Locales</a>
                          </div>
                      </div>
                     </div>
@@ -102,24 +94,10 @@
                     </div>
                 </div>
             </section>
-            <section id="contacto">
-                <h3>Contacto</h3>
-                <h5>¿Sos dueño de un local? Completá el formulario para aparecer en el catálogo</h5>
-                <form id="formulario-contacto" action="https://formspree.io/f/mbdwnayz" method="post">
-                    <p><input  type="text" name="nombre" placeholder="Nombre"></p>
-                    <p><input  type="email" name="email" placeholder="Correo Electrónico"></p>
-                    <p><input  type="number" name="numero" placeholder="Número de teléfono"></p>
-                    <p><textarea  name="mensaje" placeholder="Mensaje"></textarea></p>
-                    <p>
-                        <button type="submit" class="btn btn-success">Enviar</button>
-                        <button type="reset" class="btn btn-danger">Borrar</button>
-                    </p>
-                </form>
-            </section>
-            <footer class="bg-dark text-white text-center py-3">
-                <p>Derechos de autor &copy; 2026 Come en Alvear. Todos los derechos reservados</p>
-            </footer>
         </div>
+        <footer class="bg-dark text-white text-center py-3">
+            <p>Derechos de autor &copy; 2026 Come en Alvear. Todos los derechos reservados</p>
+        </footer>
         <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

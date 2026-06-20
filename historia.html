@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Come en Alvear</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar fixed-top bg-dark navbar-dark"> <!--se elimina el navbar-expand-lg para que siempre se vea el boton hamburguesa-->
+            <div class="container-fluid">
+                <!--Nombre y logo del sitio-->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_alvear.svg" alt="logo de come en alvear" class="d-inline-block align-middle">
+                    Come en Alvear</a>
+                <!--Boton hamburguesa-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Links-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!--el active va en la pestana en la que estemos-->
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hospedajes.html">Hospedajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historia.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="fondo-principal">
+        </div>
+        <footer class="bg-dark text-white text-center py-3">
+            <p>Derechos de autor &copy; 2026 Come en Alvear. Todos los derechos reservados</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
